@@ -1,111 +1,97 @@
-# Smalltalk [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage][CoverageIMGURL]][CoverageURL]
+# darktalk [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL]
 
 Simple [Promise](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)-based replacement of native Alert, Confirm and Prompt.
 
 # Install
 
 ```
-npm i smalltalk
+npm i darktalk
 ```
 
 # API
 
-First things first, require `smalltalk` with:
+First things first, require `darktalk` with:
 
 ```js
-const smalltalk = require('smalltalk');
+const darktalk = require("darktalk");
 ```
 
-You can also use native version with:
-
-```js
-const smalltalk = require('smalltalk/native');
-```
-
+````
 When you need a bundled verseion use
 
 ```js
-import smalltalk from 'smalltalk/bundle';
-```
+import darktalk from "darktalk/bundle";
+````
 
-In every method of `smalltalk` last parameter *options* is optional and could be used
+In every method of `darktalk` last parameter _options_ is optional and could be used
 to prevent handling of cancel event and to specify custom button label.
 
 ```js
 ({
-    cancel: true, /* default */
+  cancel: true /* default */,
 });
 ```
 
-## smalltalk.alert(title, message [, options])
-
-![Alert](https://raw.githubusercontent.com/coderaiser/smalltalk/master/screen/alert.png "Alert")
+## darktalk.alert(title, message [, options])
 
 ```js
-smalltalk
-    .alert('Error', 'There was an error!')
-    .then(() => {
-        console.log('ok');
-    });
+darktalk.alert("Error", "There was an error!").then(() => {
+  console.log("ok");
+});
 ```
 
-## smalltalk.confirm(title, message [, options])
-
-![Confirm](https://raw.githubusercontent.com/coderaiser/smalltalk/master/screen/confirm.png "Confirm")
+## darktalk.confirm(title, message [, options])
 
 ```js
-smalltalk
-    .confirm('Question', 'Are you sure?')
-    .then(() => {
-        console.log('yes');
-    })
-    .catch(() => {
-        console.log('no');
-    });
+darktalk
+  .confirm("Question", "Are you sure?")
+  .then(() => {
+    console.log("yes");
+  })
+  .catch(() => {
+    console.log("no");
+  });
 ```
 
-## smalltalk.prompt(title, message, value [, options])
-
-![Prompt](https://raw.githubusercontent.com/coderaiser/smalltalk/master/screen/prompt.png "Prompt")
+## darktalk.prompt(title, message, value [, options])
 
 ```js
-smalltalk
-    .prompt('Question', 'How old are you?', '10')
-    .then((value) => {
-        console.log(value);
-    })
-    .catch(() => {
-        console.log('cancel');
-    });
+darktalk
+  .prompt("Question", "How old are you?", "10")
+  .then((value) => {
+    console.log(value);
+  })
+  .catch(() => {
+    console.log("cancel");
+  });
 ```
 
 Use `type='password'` for `password` fields:
 
 ```js
-smalltalk
-    .prompt('Question', 'How old are you?', '10', {
-        type: 'password',
-    })
-    .then((value) => {
-        console.log(value);
-    })
-    .catch(() => {
-        console.log('cancel');
-    });
+darktalk
+  .prompt("Question", "How old are you?", "10", {
+    type: "password",
+  })
+  .then((value) => {
+    console.log(value);
+  })
+  .catch(() => {
+    console.log("cancel");
+  });
 ```
 
-## smalltalk.progress(title, message)
-
-![Progress](https://raw.githubusercontent.com/coderaiser/smalltalk/master/screen/progress.png "Progress")
+## darktalk.progress(title, message)
 
 ```js
-const progress = smalltalk.progress('Cloud Commander', 'Copy /home/coderaiser -> /home/coderaiser/2');
+const progress = darktalk.progress(
+  "Cloud Commander",
+  "Copy /home/coderaiser -> /home/coderaiser/2"
+);
 
-progress
-    .setProgress(41)
-    .catch(() => {
-        console.log('abort');
-    });
+progress.setProgress(41).catch(() => {
+  console.log("abort");
+});
 ```
 
 ## Custom label
@@ -113,30 +99,24 @@ progress
 You can use custom label passing into options param the buttons specification. For example :
 
 ```js
-const tryToCatch = require('try-to-catch');
+const tryToCatch = require("try-to-catch");
 const OK = 2;
-const result = await tryToCatch(smalltalk.confirm, 'Question', 'Are you sure?', {
-    buttons: {
-        ok: 'Ok Label',
-        cancel: 'Cancel Label',
-    },
+const result = await tryToCatch(darktalk.confirm, "Question", "Are you sure?", {
+  buttons: {
+    ok: "Ok Label",
+    cancel: "Cancel Label",
+  },
 });
 
-if (result.length === OK)
-    console.log('yes');
-else
-    console.log('no');
+if (result.length === OK) console.log("yes");
+else console.log("no");
 ```
 
 # License
 
 MIT
 
-[NPMIMGURL]: https://img.shields.io/npm/v/smalltalk.svg?style=flat&longCache=true
-[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/smalltalk/master.svg?style=flat&longCache=true
+[NPMIMGURL]: https://img.shields.io/npm/v/darktalk.svg?style=flat&longCache=true
 [LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat&longCache=true
-[NPMURL]: https://npmjs.org/package/smalltalk "npm"
-[BuildStatusURL]: https://travis-ci.org/coderaiser/smalltalk "Build Status"
+[NPMURL]: https://npmjs.org/package/darktalk "npm"
 [LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
-[CoverageURL]: https://coveralls.io/github/coderaiser/smalltalk?branch=master
-[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/smalltalk/badge.svg?branch=master&service=github

@@ -1,4 +1,4 @@
-.smalltalk {
+.darktalk {
   display: flex;
 
   align-items: center;
@@ -15,11 +15,11 @@
   z-index: 100;
 }
 
-.smalltalk + .smalltalk {
+.darktalk + .darktalk {
   transition: ease 1s;
 }
 
-.smalltalk .page {
+.darktalk .page {
   border-radius: 3px;
   background: #101010;
   box-shadow: 0 4px 23px 5px rgb(0 0 0 / 20%), 0 2px 6px rgb(0 0 0 / 15%);
@@ -31,17 +31,17 @@
 }
 
 @media only screen and (width <= 500px) {
-  .smalltalk .page {
+  .darktalk .page {
     min-width: 0;
   }
 }
 
-.smalltalk .progress {
+.darktalk .progress {
   display: block;
   width: 100%;
 }
 
-.smalltalk .page header {
+.darktalk .page header {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -55,7 +55,7 @@
   padding: 14px 17px;
 }
 
-.smalltalk .page .content-area {
+.darktalk .page .content-area {
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -63,7 +63,7 @@
   position: relative;
 }
 
-.smalltalk .page .action-area {
+.darktalk .page .action-area {
   padding: 14px 17px;
 }
 
@@ -71,13 +71,13 @@ button {
   font-family: "Ubuntu", "Arial", sans-serif;
 }
 
-.smalltalk button,
-.smalltalk .smalltalk {
+.darktalk button,
+.darktalk .darktalk {
   min-height: 2em;
   min-width: 4em;
 }
 
-.smalltalk button {
+.darktalk button {
   appearance: none;
   user-select: none;
   box-shadow: 0 1px 0 rgb(0 0 0 / 8%), inset 0 1px 2px rgb(255 255 255 / 75%);
@@ -87,29 +87,29 @@ button {
   text-shadow: 0 1px 0 rgb(240 240 240);
 }
 
-.smalltalk button::-moz-focus-inner {
+.darktalk button::-moz-focus-inner {
   border: 0;
 }
 
-.smalltalk button:enabled:active {
+.darktalk button:enabled:active {
   background-image: linear-gradient(#e7e7e7, #e7e7e7 38%, #d7d7d7);
   box-shadow: none;
   text-shadow: none;
 }
 
-.smalltalk .page .button-strip {
+.darktalk .page .button-strip {
   display: flex;
 
   flex-direction: row;
   justify-content: flex-end;
 }
 
-.smalltalk .page .button-strip > button {
+.darktalk .page .button-strip > button {
   margin-left: 10px;
   border-radius: 0.5rem;
 }
 
-.smalltalk input {
+.darktalk input {
   width: 100%;
   border: 1px solid #bfbfbf;
   border-radius: 2px;
@@ -122,8 +122,8 @@ button {
   outline: none;
 }
 
-.smalltalk button:enabled:focus,
-.smalltalk input:enabled:focus {
+.darktalk button:enabled:focus,
+.darktalk input:enabled:focus {
   transition: border-color 200ms;
   border-color: rgb(77 144 254);
   outline: none;

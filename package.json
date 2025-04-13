@@ -1,17 +1,17 @@
 {
-  "name": "smalltalk",
+  "name": "darktalk",
   "version": "4.1.2",
   "type": "commonjs",
-  "description": "Promise-based Alert, Confirm and Prompt replacement",
-  "homepage": "http://github.com/coderaiser/smalltalk",
+  "description": "Fork of the smalltalk library, redesigned with a sleek dark theme ",
+  "homepage": "https://github.com/unAmic0/darktalk",
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/smalltalk.git"
+    "url": "https://github.com/unAmic0/darktalk"
   },
-  "main": "lib/smalltalk.js",
+  "main": "lib/darktalk.js",
   "exports": {
-    ".": "./lib/smalltalk.js",
-    "./bundle": "./dist/smalltalk.min.js"
+    ".": "./lib/darktalk.js",
+    "./bundle": "./dist/darktalk.min.js"
   },
   "scripts": {
     "watch": "madrun watch",
@@ -35,16 +35,11 @@
     "upload:native": "madrun upload:native",
     "upload:native:map": "madrun upload:native:map"
   },
-  "keywords": [
-    "modal",
-    "alert",
-    "confirm",
-    "prompt"
-  ],
+  "keywords": ["modal", "alert", "confirm", "prompt"],
   "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coderaiser/smalltalk/issues"
+    "url": "https://github.com/unAmic0/darktalk/issues"
   },
   "devDependencies": {
     "auto-globals": "^3.0.0",
