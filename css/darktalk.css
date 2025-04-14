@@ -11,6 +11,7 @@
   overflow: auto;
   padding: 20px;
   position: fixed;
+  background: #00000080;
 
   z-index: 100;
 }
@@ -107,6 +108,7 @@ button {
 .darktalk .page .button-strip > button {
   margin-left: 10px;
   border-radius: 0.5rem;
+  background-image: linear-gradient(#ededed, #ededed 38%, #dedede);
 }
 
 .darktalk input {

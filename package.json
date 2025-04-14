@@ -1,6 +1,6 @@
 {
   "name": "darktalk",
-  "version": "4.1.2",
+  "version": "4.1.3",
   "type": "commonjs",
   "description": "Fork of the smalltalk library, redesigned with a sleek dark theme ",
   "homepage": "https://github.com/unAmic0/darktalk",
@@ -35,7 +35,12 @@
     "upload:native": "madrun upload:native",
     "upload:native:map": "madrun upload:native:map"
   },
-  "keywords": ["modal", "alert", "confirm", "prompt"],
+  "keywords": [
+    "modal",
+    "alert",
+    "confirm",
+    "prompt"
+  ],
   "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
   "license": "MIT",
   "bugs": {
