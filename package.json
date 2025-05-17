@@ -1,83 +1,78 @@
 {
-  "name": "darktalk",
-  "version": "4.1.4",
-  "type": "commonjs",
-  "description": "Fork of the smalltalk library, redesigned with a sleek dark theme ",
-  "homepage": "https://github.com/unAmic0/darktalk",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/unAmic0/darktalk"
-  },
-  "main": "lib/darktalk.js",
-  "exports": {
-    ".": "./lib/darktalk.js",
-    "./bundle": "./dist/darktalk.min.js"
-  },
-  "scripts": {
-    "watch": "madrun watch",
-    "watch:test": "madrun watch:test",
-    "watch:lint": "madrun watch:lint",
-    "watch:lint:js": "madrun watch:lint:js",
-    "watch:coverage": "madrun watch:coverage",
-    "coverage": "madrun coverage",
-    "report": "madrun report",
-    "lint": "madrun lint",
-    "fresh:lint": "madrun fresh:lint",
-    "lint:fresh": "madrun lint:fresh",
-    "fix:lint": "madrun fix:lint",
-    "test": "madrun test",
-    "test:update": "madrun test:update",
-    "build": "madrun build",
-    "wisdom": "madrun wisdom",
-    "wisdom:done": "madrun wisdom:done",
-    "upload:main": "madrun upload:main",
-    "upload:main:map": "madrun upload:main:map",
-    "upload:native": "madrun upload:native",
-    "upload:native:map": "madrun upload:native:map"
-  },
-  "keywords": [
-    "modal",
-    "alert",
-    "confirm",
-    "prompt"
-  ],
-  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/unAmic0/darktalk/issues"
-  },
-  "devDependencies": {
-    "auto-globals": "^3.0.0",
-    "autoprefixer": "^10.0.1",
-    "c8": "^8.0.1",
-    "clean-css-loader": "^4.1.1",
-    "css-loader": "^6.7.1",
-    "css-modules-require-hook": "^4.2.3",
-    "eslint": "^8.19.0",
-    "eslint-plugin-n": "^16.3.1",
-    "eslint-plugin-putout": "^21.0.2",
-    "madrun": "^9.0.5",
-    "nodemon": "^3.0.2",
-    "postcss": "^8.4.32",
-    "putasset": "^6.0.0",
-    "putout": "^33.13.3",
-    "style-loader": "^3.3.1",
-    "supertape": "^8.8.0",
-    "terser-webpack-plugin": "^5.0.0",
-    "try-to-tape": "^1.1.0",
-    "url-loader": "^4.0.0",
-    "version-io": "^4.0.1",
-    "webpack": "^5.1.3",
-    "webpack-cli": "^5.1.4",
-    "wraptile": "^3.0.0"
-  },
-  "dependencies": {
-    "@cloudcmd/create-element": "^2.0.0",
-    "currify": "^4.0.0",
-    "fullstore": "^3.0.0",
-    "dompurify": "^3.1.6"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "darktalk",
+	"version": "4.1.5",
+	"type": "commonjs",
+	"description": "Fork of the smalltalk library, redesigned with a sleek dark theme ",
+	"homepage": "https://github.com/unAmic0/darktalk",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/unAmic0/darktalk"
+	},
+	"main": "lib/darktalk.js",
+	"exports": {
+		".": "./lib/darktalk.js",
+		"./bundle": "./dist/darktalk.min.js"
+	},
+	"scripts": {
+		"watch": "madrun watch",
+		"watch:test": "madrun watch:test",
+		"watch:lint": "madrun watch:lint",
+		"watch:lint:js": "madrun watch:lint:js",
+		"watch:coverage": "madrun watch:coverage",
+		"coverage": "madrun coverage",
+		"report": "madrun report",
+		"lint": "madrun lint",
+		"fresh:lint": "madrun fresh:lint",
+		"lint:fresh": "madrun lint:fresh",
+		"fix:lint": "madrun fix:lint",
+		"test": "madrun test",
+		"test:update": "madrun test:update",
+		"build": "madrun build",
+		"wisdom": "madrun wisdom",
+		"wisdom:done": "madrun wisdom:done",
+		"upload:main": "madrun upload:main",
+		"upload:main:map": "madrun upload:main:map",
+		"upload:native": "madrun upload:native",
+		"upload:native:map": "madrun upload:native:map"
+	},
+	"keywords": ["modal", "alert", "confirm", "prompt"],
+	"author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/unAmic0/darktalk/issues"
+	},
+	"devDependencies": {
+		"auto-globals": "^3.0.0",
+		"autoprefixer": "^10.0.1",
+		"c8": "^8.0.1",
+		"clean-css-loader": "^4.1.1",
+		"css-loader": "^6.7.1",
+		"css-modules-require-hook": "^4.2.3",
+		"eslint": "^8.19.0",
+		"eslint-plugin-n": "^16.3.1",
+		"eslint-plugin-putout": "^21.0.2",
+		"madrun": "^9.0.5",
+		"nodemon": "^3.0.2",
+		"postcss": "^8.4.32",
+		"putasset": "^6.0.0",
+		"putout": "^33.13.3",
+		"style-loader": "^3.3.1",
+		"supertape": "^8.8.0",
+		"terser-webpack-plugin": "^5.0.0",
+		"try-to-tape": "^1.1.0",
+		"url-loader": "^4.0.0",
+		"version-io": "^4.0.1",
+		"webpack": "^5.1.3",
+		"webpack-cli": "^5.1.4",
+		"wraptile": "^3.0.0"
+	},
+	"dependencies": {
+		"@cloudcmd/create-element": "^2.0.0",
+		"currify": "^4.0.0",
+		"fullstore": "^3.0.0",
+		"dompurify": "^3.1.6"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
